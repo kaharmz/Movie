@@ -1,5 +1,5 @@
 # Movie
-Aplikasi Movie yang terintegrasi secara real time dengan api.themoviedb.org, dibuat dengan arsitektur Model, View, View Model untuk database mengunakan SQlite Database pada list favorite serta beberapa library diantaranya:
+Aplikasi Movie yang terintegrasi secara real time dengan The Movie Database (TMDb), dibuat dengan arsitektur MVVM, untuk database mengunakan SQlite Database pada list favorite serta beberapa library diantaranya:
 
 1. Glide 
 2. AsyncHttpClient 
@@ -13,7 +13,7 @@ Fitur
 4. Favorite List
 5. Daily Reminder
 6. Release Today Reminder
-7. Widget Favorite
+7. Realtime Widget Favorite
 
 Screenshot
 
