@@ -11,6 +11,7 @@ Fitur
 7. Widget Favorite
 
 Screenshot
+
 ![Screenshot_20190830-100457_Movies](https://user-images.githubusercontent.com/41383928/63992614-ded91b00-cb16-11e9-9e42-4bb6791f8a7e.jpg)
 
 ![Screenshot_20190830-100515_Movies](https://user-images.githubusercontent.com/41383928/63992635-f6b09f00-cb16-11e9-9009-14cdd776eb4d.jpg)
