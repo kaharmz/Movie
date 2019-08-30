@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:layout_marginBottom="7dp"
+    card_view:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:background="@drawable/tv_image_gradient"
+            android:elevation="4dp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/image_tv"
+            card_view:layout_constraintEnd_toEndOf="@+id/image_tv"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/image_tv"
+            card_view:layout_constraintTop_toTopOf="@+id/image_tv"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/text_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="2dp"
+            android:elevation="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/imageView"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintVertical_bias="0.804"
+            tools:targetApi="lollipop"
+            tools:text="Jason And Freddy" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_star_border_white"
+            android:contentDescription="@string/todo"
+            android:elevation="4dp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/text_title_tv"
+            card_view:layout_constraintEnd_toStartOf="@+id/text_rating_tv"
+            card_view:layout_constraintTop_toTopOf="@+id/text_title_tv"
+            card_view:layout_constraintVertical_bias="0.43"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/text_rating_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:elevation="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="@+id/imageView"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:targetApi="lollipop"
+            tools:text="7.8" />
+
+        <TextView
+            android:id="@+id/text_desc_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="4dp"
+            android:maxLines="3"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="@+id/text_title_tv"
+            card_view:layout_constraintTop_toBottomOf="@+id/text_title_tv"
+            card_view:layout_constraintVertical_bias="0.0"
+            tools:targetApi="lollipop"
+            tools:text="Lorem Ipsum Dolor Sit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

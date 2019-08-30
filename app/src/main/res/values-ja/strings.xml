@@ -1,0 +1,61 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">映画</string>
+    <string name="activity_detail">詳細ムービー</string>
+    <string name="navigation_drawer_open">ナビゲーション引き出しを開く</string>
+    <string name="navigation_drawer_close">ナビゲーション引き出しを閉じる</string>
+    <string name="nav_header_title">Abdul Kahar Muzakir</string>
+    <string name="nav_header_subtitle">abdulkaharmuzakir@mail.com</string>
+    <string name="action_settings">設定</string>
+    <string name="tab_title_movie">映画</string>
+    <string name="tab_title_tv_show">テレビ番組</string>
+    <string name="tab_title_favorites">好きな</string>
+    <string name="change_language">言語を変える</string>
+    <string name="btn_favorite">お気に入りに追加</string>
+    <string name="todo">TODO</string>
+    <string name="description">Description</string>
+    <string name="close">閉じた</string>
+
+    <string name="warning_alert">警告</string>
+    <string name="warning_alert_data_exists">データは既に存在します</string>
+    <string name="data_add_success">お気に入りに追加されたデータ</string>
+    <string name="data_delete_success">データを削除しました</string>
+
+    <!-- SETTING PREFERENCE -->
+    <string name="daily_reminder">key_daily_reminder</string>
+    <string name="release_reminder">key_release_reminder</string>
+    <string name="changes_language">key_change_language</string>
+
+    <string name="release_reminder_title">リリースリマインダー</string>
+    <string name="release_reminder_summary">本日公開された映画のリマインダー</string>
+
+    <string name="daily_reminder_title">毎日のリマインダー</string>
+    <string name="daily_reminder_summary">アプリに戻るためのリマインダー</string>
+
+    <string name="category_language">言語</string>
+    <string name="category_language_summary">言語を変えてください</string>
+
+
+    <!-- REMINDER -->
+    <string name="pop_up_reminder">本日リリースされました！</string>
+    <string name="reminder_notification">不足しているアプリケーションムービー</string>
+    <string name="reminder_release_on">リリースのリマインダー</string>
+    <string name="reminder_release_of">リリースリマインダーオン</string>
+
+    <string name="reminder_daily_on">毎日のリマインダーオン</string>
+    <string name="reminder_daily_of">毎日のリマインダー</string>
+
+    <!-- MANIFEST_LABEL -->
+    <string name="setting_name">セッティング</string>
+    <string name="search_name">サーチ</string>
+
+    <!-- REMINDER_LABEL -->
+
+    <!-- QUERY_HINT -->
+    <string name="query_hint_movie">映画を検索</string>
+    <string name="query_hint_tv">テレビ番組を検索</string>
+
+    <!-- WIDGET -->
+    <string name="favorite_movie">お気に入りの映画</string>
+
+
+</resources>

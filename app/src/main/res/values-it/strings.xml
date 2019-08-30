@@ -1,0 +1,61 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Film</string>
+    <string name="activity_detail">Film di dettaglio</string>
+    <string name="navigation_drawer_open">Apri il cassetto di navigazione</string>
+    <string name="navigation_drawer_close">Chiudi il cassetto di navigazione</string>
+    <string name="nav_header_title">Abdul Kahar Muzakir</string>
+    <string name="nav_header_subtitle">abdulkaharmuzakir@mail.com</string>
+    <string name="action_settings">impostazioni</string>
+    <string name="tab_title_movie">Film</string>
+    <string name="tab_title_tv_show">Programma televisivo</string>
+    <string name="tab_title_favorites">Favorito</string>
+    <string name="change_language">Lingua</string>
+    <string name="btn_favorite">Aggiungi ai favoriti</string>
+    <string name="todo">TODO</string>
+    <string name="description">Description</string>
+    <string name="close">coperchio</string>
+
+    <string name="warning_alert">AVVERTIMENTO</string>
+    <string name="warning_alert_data_exists">I dati esistono già</string>
+    <string name="data_add_success">Dati aggiunti ai preferiti</string>
+    <string name="data_delete_success">Dati eliminati correttamente</string>
+
+    <!-- SETTING PREFERENCE -->
+    <string name="daily_reminder">key_daily_reminder</string>
+    <string name="release_reminder">key_release_reminder</string>
+    <string name="changes_language">key_change_language</string>
+
+    <string name="release_reminder_title">Promemoria di rilascio</string>
+    <string name="release_reminder_summary">Promemoria che mostra film uscito oggi</string>
+
+    <string name="daily_reminder_title">Promemoria giornaliero</string>
+    <string name="daily_reminder_summary">Promemoria per tornare all app</string>
+
+    <string name="category_language">linguaggio</string>
+    <string name="category_language_summary">Cambia lingua</string>
+
+
+    <!-- REMINDER -->
+    <string name="pop_up_reminder">è stato rilasciato oggi!</string>
+    <string name="reminder_notification">Il film dell applicazione ti manca</string>
+    <string name="reminder_release_on">Rilascio promemoria attivato</string>
+    <string name="reminder_release_of">Promemoria di rilascio di</string>
+
+    <string name="reminder_daily_on">Promemoria giornaliero attivo</string>
+    <string name="reminder_daily_of">Promemoria giornaliero di</string>
+
+    <!-- MANIFEST_LABEL -->
+    <string name="setting_name">Ambientazione</string>
+    <string name="search_name">Ricerca</string>
+
+    <!-- REMINDER_LABEL -->
+
+    <!-- QUERY_HINT -->
+    <string name="query_hint_movie">Cerca film</string>
+    <string name="query_hint_tv">Cerca show televisivo</string>
+
+    <!-- WIDGET -->
+    <string name="favorite_movie">Film preferito</string>
+
+
+</resources>

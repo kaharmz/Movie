@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activities.DetailActivity">
+
+        <com.github.florent37.shapeofview.shapes.ArcView
+            android:id="@+id/arcView"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="8dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:shape_arc_cropDirection="outside"
+            app:shape_arc_height="20dp"
+            app:shape_arc_position="bottom"
+            tools:targetApi="p">
+
+            <ImageView
+                android:id="@+id/image_background"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/image_gradient"
+                android:contentDescription="@string/todo"
+                android:foregroundTintMode="src_over"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tv_image_gradient"
+                android:elevation="4dp" />
+
+
+        </com.github.florent37.shapeofview.shapes.ArcView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/poster_card"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_date"
+            app:layout_constraintEnd_toEndOf="@+id/arcView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.42000002"
+            tools:targetApi="lollipop">
+
+            <ImageView
+                android:id="@+id/image_poster"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/poster_card"
+            app:layout_constraintTop_toBottomOf="@+id/arcView"
+            tools:text="Jason And Freddy" />
+
+        <TextView
+            android:id="@+id/text_genre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:padding="4dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/poster_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text_title"
+            app:layout_constraintTop_toBottomOf="@+id/text_title"
+            app:layout_constraintVertical_bias="0.187"
+            tools:text="Horror" />
+
+        <ImageView
+            android:id="@+id/images_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_language_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/description"
+            app:layout_constraintStart_toStartOf="@+id/poster_card"
+            app:layout_constraintTop_toBottomOf="@+id/poster_card"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/images_language"
+            app:layout_constraintEnd_toStartOf="@+id/images_date"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/images_language"
+            app:layout_constraintTop_toTopOf="@+id/images_language"
+            tools:text="Eng" />
+
+
+        <ImageView
+            android:id="@+id/images_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_favorite_border_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_date"
+            app:layout_constraintEnd_toStartOf="@+id/text_popular"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_date"
+            app:layout_constraintTop_toTopOf="@+id/text_date" />
+
+        <TextView
+            android:id="@+id/text_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_date"
+            app:layout_constraintEnd_toStartOf="@+id/images_rating"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/images_popular"
+            tools:text="20" />
+
+
+        <ImageView
+            android:id="@+id/images_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_star_border_black"
+            app:layout_constraintBottom_toBottomOf="@+id/text_popular"
+            app:layout_constraintEnd_toStartOf="@+id/text_rating"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_popular"
+            app:layout_constraintTop_toTopOf="@+id/text_popular" />
+
+        <TextView
+            android:id="@+id/text_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_popular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/images_rating"
+            tools:text="6.7" />
+
+        <ImageView
+            android:id="@+id/images_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_date_range_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_language"
+            app:layout_constraintEnd_toStartOf="@+id/text_date"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_language"
+            app:layout_constraintTop_toTopOf="@+id/text_language" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_language"
+            app:layout_constraintEnd_toStartOf="@+id/images_popular"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/images_date"
+            tools:text="0101" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/description"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/images_language"
+            app:layout_constraintTop_toBottomOf="@+id/text_date" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/description"
+            app:layout_constraintTop_toBottomOf="@+id/description"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Lorem Ipsum Dolor Sit Amet" />
+
+        <Button
+            android:id="@+id/btn_detail_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorAccent"
+            android:text="@string/btn_favorite"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_description"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+
+
+

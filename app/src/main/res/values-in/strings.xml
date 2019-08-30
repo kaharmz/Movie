@@ -1,0 +1,59 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Film</string>
+    <string name="activity_detail">Detail Film</string>
+    <string name="navigation_drawer_open">Buka laci navigasi</string>
+    <string name="navigation_drawer_close">Tutup laci navigasi</string>
+    <string name="nav_header_title">Abdul Kahar Muzakir</string>
+    <string name="nav_header_subtitle">abdulkaharmuzakir@mail.com</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="tab_title_movie">Film</string>
+    <string name="tab_title_tv_show">Acara TV</string>
+    <string name="tab_title_favorites">Favorit</string>
+    <string name="change_language">Bahasa</string>
+    <string name="btn_favorite">Tambahkan ke favorit</string>
+    <string name="todo">TODO</string>
+    <string name="description">Description</string>
+    <string name="close">Tutup</string>
+
+    <string name="warning_alert">PERHATIAN</string>
+    <string name="warning_alert_data_exists">Data sudah ada</string>
+    <string name="data_add_success">Data berhasil ditambahkan ke favorit</string>
+    <string name="data_delete_success">Data berhasil dihapus</string>
+
+    <!-- SETTING PREFERENCE -->
+    <string name="pop_up_reminder">telah dirilis hari ini!</string>
+    <string name="daily_reminder">key_daily_reminder</string>
+    <string name="release_reminder">key_release_reminder</string>
+    <string name="changes_language">key_change_language</string>
+
+    <string name="release_reminder_title">Lepaskan Pengingat</string>
+    <string name="release_reminder_summary">Menampilkan film yang dirilis hari ini</string>
+
+    <string name="daily_reminder_title">Pengingat Harian</string>
+    <string name="daily_reminder_summary">Pengingat untuk kembali ke aplikasi</string>
+
+    <string name="category_language">Bahasa</string>
+    <string name="category_language_summary">Ganti Bahasa</string>
+
+    <!-- REMINDER -->
+    <string name="reminder_notification">Aplikasi film merindukanmu</string>
+    <string name="reminder_release_on">Release reminder dihidupkan</string>
+    <string name="reminder_release_of">Release reminder dimatikan</string>
+
+    <string name="reminder_daily_on">Pengingat harian dihidupkan</string>
+    <string name="reminder_daily_of">Pengingat harian dimatikan</string>
+
+    <!-- MANIFEST_LABEL -->
+    <string name="setting_name">Pengaturan</string>
+    <string name="search_name">Pencarian</string>
+
+    <!-- REMINDER_LABEL -->
+
+    <!-- QUERY_HINT -->
+    <string name="query_hint_movie">Pencarian film</string>
+    <string name="query_hint_tv">Pencarian acara tv</string>
+
+    <!-- WIDGET -->
+    <string name="favorite_movie">Film Favorite</string>
+
+</resources>
